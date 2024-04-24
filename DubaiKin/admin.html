@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <style>
+    .main {
+      width: 100%;
+      height: 100vh;
+      background-color: rgba(237, 138, 44, 1);
+    }
+
+    .main1 {
+
+      width: 90%;
+      height: 120px;
+      margin: auto;
+      align-items: center;
+      display: flex;
+    }
+
+    .main1-img {
+      width: 60px;
+      border-radius: 50%;
+      align-items: center;
+
+    }
+
+    .main1-img img {
+      width: 100%;
+      border-radius: 50%;
+    }
+
+    .main1-content {
+      margin-left: 10px;
+    }
+
+    .main1-content h2 {
+      font-size: 25px;
+      font-family: sans-serif, 'inter';
+      font-weight: 700;
+      color: white;
+    }
+
+    .main1-content p {
+      font-size: 16px;
+      font-family: sans-serif, 'inter';
+      font-weight: 400;
+      color: white;
+      margin-top: 5px;
+    }
+
+    .main2 {
+      width: 65%;
+      margin: 0 auto 30px;
+      height: 300px;
+
+      display: flex;
+    }
+
+    .sub {
+      height: 120px;
+    }
+
+    .main2-left {
+      width: 50%;
+      height: 80%;
+      margin-top: 40px;
+    }
+
+    .main2-left p {
+      margin: 25px 0;
+      font: 18px;
+      font-family: sans-serif, 'inter';
+      color: white;
+    }
+
+    .main2-left h3 {
+      font-size: 19px;
+      color: white;
+      font-family: sans-serif, 'inter';
+    }
+
+    .main2-left p span {
+      float: right;
+    }
+
+    .main2-right {
+      width: 20%;
+      margin: 40px auto;
+
+    }
+
+    .main2-right button {
+      float: right;
+      width: 80px;
+      height: 35px;
+      border-radius: 5px;
+      background-color: white;
+      color: black;
+
+    }
+
+    @media(max-width:768px) {
+      .main {
+        width: 100%;
+        height: 130vh;
+        background-color: rgba(237, 138, 44, 1);
+      }
+
+
+      .main1-content h2 {
+        font-size: 22px;
+      }
+
+      .main2 {
+        width: 85%;
+
+      }
+
+      .sub {
+        height: 140px;
+      }
+    }
+  </style>
+
+  <div class="nav">
+    <nav>
+      <div class="logo">
+        <a href="home.html"><img src="img/logo.jpeg" alt="" /></a>
+      </div>
+      <div class="menu">
+        <ul class="nav1">
+          <li><a href="Send-money.html">Send Money</a></li>
+          <li><a href="receive.html">Receive Money</a></li>
+          <li><a href="#">Track Transfer</a></li>
+        </ul>
+        <div class="menu-icon">
+          <i class="bi bi-list" style="color: black;" onclick="toggleMenu()"></i>
+        </div>
+
+        <div class="menu-list" id="menu-list">
+          <ul>
+            <li><a href="admin.html">Profile</a></li>
+            <li><a href="transaction-history.html">Transition History</a></li>
+            <li><a href="about-us.html">About Us</a></li>
+            <li><a href="#">Privcey Police</a></li>
+            <li><a href="#">Your Saved Accounts</a></li>
+            <li><a href="login.html">Login</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <nav class="nav2">
+      <ul>
+        <li><a href="Send-money.html">Send Money</a></li>
+        <li><a href="#">Receive Money</a></li>
+        <li><a href="#">Track Transfer</a></li>
+      </ul>
+    </nav>
+  </div>
+  <section class="main">
+    <div class="main1">
+      <div class="main1-img
+      ">
+        <img src="img/icon.jpg" alt="">
+
+      </div>
+      <div class="main1-content">
+        <h2>Md Al Amin</h2>
+        <p>Profile</p>
+      </div>
+    </div>
+    <hr>
+    <div class="main2">
+      <div class="main2-left">
+        <p> First Name :<span>waseem</span></p>
+        <p> Last Name :<span>wasif</span></p>
+        <p> Date Of Birth :<span>5/5/1998</span></p>
+        <p> Gender :<span>male</span></p>
+        <p> Email :<span>waseem@gmail.com</span></p>
+        <p> contact :<span>098243</span></p>
+      </div>
+      <div class="main2-right">
+        <button> <i class="bi bi-pencil-square"></i> Edit</button>
+      </div>
+    </div>
+    <hr>
+    <div class="main2 sub">
+      <div class="main2-left">
+        <h3>Present Address:</h3>
+        <p>Sector- 01, Road- 03m Uttara model toen, uttara
+          Dhaka, 1230.</p>
+      </div>
+      <div class="main2-right">
+        <button> <i class="bi bi-pencil-square"></i> Edit</button>
+      </div>
+    </div>
+    <hr>
+    <div class="main2 sub">
+      <div class="main2-left">
+        <h3>Present Address:</h3>
+        <p>Sector- 01, Road- 03m Uttara model toen, uttara
+          Dhaka, 1230.</p>
+      </div>
+      <div class="main2-right">
+        <button> <i class="bi bi-pencil-square"></i> Edit</button>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="footer1">
+    <div class="F-content">
+      <div class="F-content1">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwJs9NV_Vd24KLc09ndXT4T1rg6pP5JapF5fUh8hSl7qHLtfOhqd7qr1-TcbDk8hWzb2E&usqp=CAU"
+          alt="" />
+        <p>Bangladesh</p>
+      </div>
+      <ul>
+        <li>Send Money</li>
+        <li>Receive Money</li>
+        <li>Transfer Money</li>
+      </ul>
+    </div>
+    <div class="F-content">
+      <ul>
+        <li>Tools</li>
+        <li>Track A Transfer</li>
+        <li>Find Location</li>
+      </ul>
+    </div>
+    <div class="F-content">
+      <ul>
+        <li>Quick Links</li>
+        <li>FAQs</li>
+        <li>Contact Us</li>
+        <li>About Us</li>
+      </ul>
+    </div>
+    <div class="F-content">
+      <ul>
+        <li>Tools</li>
+        <li>Online Privcy Statement</li>
+      </ul>
+    </div>
+  </section>
+  <section class="footer2">
+    <div class="left-footer2">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="about-us.html">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Police</a></li>
+      </ul>
+    </div>
+    <div class="right-footer2">
+      <i class="bi bi-facebook"></i>
+      <i class="bi bi-twitter"></i>
+      <i class="bi bi-youtube" style="color: red;"></i>
+    </div>
+  </section>
+
+  <script>
+    let submenu = document.getElementById("menu-list")
+    function toggleMenu() {
+
+      submenu.classList.toggle("open-menu");
+    }
+
+  </script>
+</body>
+
+
+</html>

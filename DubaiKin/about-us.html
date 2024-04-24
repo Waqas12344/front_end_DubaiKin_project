@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .main {
+
+        width: 100%;
+        height: 75vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-left {
+        width: 50%;
+        height: 100%;
+        background-color: rgba(237, 138, 44, 1);
+    }
+
+    .main-left .main-left-content {
+        width: 85%;
+        margin: 20px auto;
+    }
+
+    .main-left-content h2 {
+        text-align: center;
+        color: rgba(255, 255, 255, 1);
+        margin: 5px;
+    }
+
+    .main-left-content p {
+        font-size: 14px;
+        font-family: sans-serif, 'inter';
+        font-weight: 500;
+        color: rgba(255, 255, 255, 1);
+        margin: 10px 0;
+    }
+
+    .main-right {
+        width: 50%;
+        height: 100%;
+        background-color: white;
+    }
+
+    .main-right img {
+        text-align: center;
+        width: 500px;
+    }
+
+    @media(max-width:768px) {
+        .main {
+            display: block;
+            height: 80vh;
+        }
+
+        .main-left {
+            width: 100%;
+        }
+
+        .main-left-content p {
+            font-size: 12.5px;
+            font-family: sans-serif, 'inter';
+        }
+
+        .main-right {
+            display: none;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="img/logo.jpeg" alt="" /></a>
+            </div>
+            <div class="menu">
+                <ul class="nav1">
+                    <li><a href="Send-money.html">Send Money</a></li>
+                    <li><a href="receive.html">Receive Money</a></li>
+                    <li><a href="#">Track Transfer</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <i class="bi bi-list" style="color: black;" onclick="toggleMenu()"></i>
+                </div>
+
+                <div class="menu-list" id="menu-list">
+                    <ul>
+                        <li><a href="admin.html">Profile</a></li>
+                        <li><a href="transaction-history.html">Transition History</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Privcey Police</a></li>
+                        <li><a href="#">Your Saved Accounts</a></li>
+                        <li><a href="login.html">Login</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <li><a href="Send-money.html">Send Money</a></li>
+                <li><a href="receive.html">Receive Money</a></li>
+                <li><a href="#">Track Transfer</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section class="main">
+        <div class="main-left">
+            <div class="main-left-content">
+                <h2>About Us</h2>
+                <p>
+                    1. **Online Payment Security:** In today's digital landscape, ensuring robust online payment
+                    security is paramount. With
+                    the rising incidents of cyber threats and data breaches, it's essential for payment websites to
+                    implement advanced
+                    security measures. These include end-to-end encryption, multi-factor authentication, and real-time
+                    fraud detection
+                    systems. By prioritizing security, businesses can not only protect their customers' sensitive
+                    information but also build
+                    trust and confidence in their online payment processes.
+
+                </p> <br>
+                <p>2. **Digital Wallets and Mobile Payments:** The convenience of digital wallets and mobile payment
+                    apps has
+                    revolutionized the way transactions are conducted. As smartphones become an integral part of our
+                    lives, these tools
+                    offer seamless and contactless payment options. From Apple Pay to Google Pay, users can store their
+                    payment details
+                    securely and make quick purchases with just a tap. This shift towards digital payment methods
+                    underscores the need for
+                    businesses to optimize their platforms for mobile compatibility and embrace the evolving preferences
+                    of consumers.</p> <br>
+                <p>3. **E-commerce Trends:** The realm of e-commerce is experiencing rapid evolution, driven by shifting
+                    consumer behaviors
+                    and technological advancements. With the global pandemic accelerating the adoption of online
+                    shopping, businesses are
+                    focusing on enhancing user experiences, optimizing product recommendations, and streamlining the
+                    checkout process. As
+                    customers demand smoother and more personalized interactions, payment websites play a pivotal role
+                    in shaping these
+                    trends by offering secure, efficient, and user-friendly payment solutions.</p> <br>
+                <p>4. **User Experience in Payment Portals:** A seamless user experience is the cornerstone of
+                    successful payment portals.
+                    Whether it's a straightforward checkout process, clear payment breakdowns, or intuitive navigation,
+                    users appreciate
+                    platforms that prioritize their ease of use. Optimizing payment websites for responsiveness across
+                    devices, along with
+                    features like saved payment information and guest checkouts, can significantly enhance customer
+                    satisfaction and drive
+                    repeat business.</p>
+
+            </div>
+        </div>
+        <div class="main-right">
+            <img src="img/about-img.JPG" alt="">
+        </div>
+    </section>
+
+
+    <section class="footer1">
+        <div class="F-content">
+            <div class="F-content1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwJs9NV_Vd24KLc09ndXT4T1rg6pP5JapF5fUh8hSl7qHLtfOhqd7qr1-TcbDk8hWzb2E&usqp=CAU"
+                    alt="" />
+                <p>Bangladesh</p>
+            </div>
+            <ul>
+                <li>Send Money</li>
+                <li>Receive Money</li>
+                <li>Transfer Money</li>
+            </ul>
+        </div>
+        <div class="F-content">
+            <ul>
+                <li>Tools</li>
+                <li>Track A Transfer</li>
+                <li>Find Location</li>
+            </ul>
+        </div>
+        <div class="F-content">
+            <ul>
+                <li>Quick Links</li>
+                <li>FAQs</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+        <div class="F-content">
+            <ul>
+                <li>Tools</li>
+                <li>Online Privcy Statement</li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer2">
+        <div class="left-footer2">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Police</a></li>
+            </ul>
+        </div>
+        <div class="right-footer2">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube" style="color: red;"></i>
+        </div>
+    </section>
+
+
+    <script>
+        let submenu = document.getElementById("menu-list")
+        function toggleMenu() {
+
+            submenu.classList.toggle("open-menu");
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    .main {
+        background-color: rgba(237, 138, 44, 1);
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main-left {
+        width: 30%;
+        margin: 20px auto;
+        padding: 10px;
+
+    }
+
+    .main-left h2 {
+        color: rgba(255, 255, 255, 1);
+        font-size: 28px;
+        line-height: 35px;
+        font-weight: 700;
+        font-family: sans-serif, 'inter';
+    }
+
+    .main-left p {
+        color: rgba(255, 255, 255, 1);
+        font-size: 13px;
+        font-weight: 400;
+        margin-top: 30px;
+        font-family: sans-serif, 'inter';
+    }
+
+    .main-left button {
+        width: 150px;
+        height: 35px;
+        padding: 7px 5px;
+        margin-top: 20px;
+        border: 1px solid rgba(255, 255, 255, 1);
+        background-color: rgba(237, 138, 44, 1);
+        color: rgba(255, 255, 255, 1);
+        border-radius: 30px;
+        text-align: center;
+    }
+
+    .main-right {
+        width: 30%;
+        height: 400px;
+        margin: 20px auto;
+        padding: 30px;
+        background-color: rgba(255, 255, 255, 1);
+        border-radius: 5px;
+
+    }
+
+    form h3 {
+        text-align: center;
+        font-family: sans-serif, 'inter';
+        margin: 20px auto;
+    }
+
+    form label {
+        font-size: 14px;
+        font-weight: 500;
+        font-family: sans-serif, 'inter';
+    }
+
+    .send-money-process {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .send-money-process2 {
+        width: 130px;
+        margin: auto;
+    }
+
+    .send-amount {
+        width: 120px;
+        height: 35px;
+        align-items: center;
+        justify-content: space-between;
+        border: 1px solid black;
+    }
+
+    .send-amount p {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    .send-amount .currency {
+        float: right;
+    }
+
+    form select {
+        border: 1px solid black;
+        width: 100%;
+        height: 40px;
+        border-radius: 5px;
+        outline: none;
+        color: rgba(0, 0, 0, 0.7);
+        font-size: 14px;
+        font-weight: 500;
+        font-family: sans-serif, 'inter';
+        margin-top: 10px;
+
+    }
+
+    .form-button {
+        margin-top: 50px;
+    }
+
+    form button {
+        width: 100%;
+        height: 33px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: rgba(37, 44, 82, 1);
+        color: aliceblue;
+        margin: 7px 0;
+
+    }
+
+    form button a {
+        text-decoration: none;
+        color: white;
+    }
+
+    .form-button p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 14px;
+        font-family: sans-serif, 'inter';
+
+    }
+
+    .form-button p span {
+        color: rgba(237, 138, 44, 1);
+    }
+
+    @media(max-width:768px) {
+        .main {
+            height: 130vh;
+            display: block;
+        }
+
+        .main-left {
+            width: 60%;
+        }
+
+        .main-right {
+            width: 60%;
+            height: 360px;
+        }
+
+        form h3 {
+            margin: 15px auto;
+        }
+
+        .send-money-process2 {
+            width: 110px;
+
+        }
+
+        .send-amount {
+            width: 110px;
+            height: 32px;
+
+        }
+
+
+    }
+</style>
+
+<body>
+    <div class="nav">
+        <nav>
+            <div class="logo">
+                <a href="home.html"><img src="img/logo.jpeg" alt="" /></a>
+            </div>
+            <div class="menu">
+                <ul class="nav1">
+                    <li><a href="Send-money.html">Send Money</a></li>
+                    <li><a href="receive.html">Receive Money</a></li>
+                    <li><a href="home.html">Track Transfer</a></li>
+                </ul>
+                <div class="menu-icon">
+                    <i class="bi bi-list" style="color: black;" onclick="toggleMenu()"></i>
+                </div>
+
+                <div class="menu-list" id="menu-list">
+                    <ul>
+                        <li><a href="admin.html">Profile</a></li>
+                        <li><a href="transaction-history.html">Transition History</a></li>
+                        <li><a href="about-us.html">About Us</a></li>
+                        <li><a href="#">Privcey Police</a></li>
+                        <li><a href="#">Your Saved Accounts</a></li>
+                        <li><a href="login.html">Login</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav2">
+            <ul>
+                <li><a href="Send-money.html">Send Money</a></li>
+                <li><a href="receive.html">Receive Money</a></li>
+                <li><a href="#">Track Transfer</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section class="main">
+        <div class="main-left">
+            <h2>
+                Copy
+                Transfer Money Across World In Real Time With No charge
+            </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi expedita ad corporis, alias at ab, eaque
+                libero ipsam, nemo vel consectetur iste repudiandae! Dolorum minus asperiores, doloribus harum
+                voluptatibus repellat optio tempore ipsam et voluptate.</p>
+            <button>Watch Video</button>
+        </div>
+        <div class="main-right">
+            <form action="">
+                <h3>Send Money</h3>
+                <div class="send-money-process">
+                    <div>
+                        <label>Send Amount</label><br>
+                        <div class="send-amount">
+                            <p class="amount">$122</p>
+                            <p class="currency">USD</p>
+                        </div>
+                    </div>
+                    <div><label>Receive Amount</label><br>
+                        <div class="send-amount">
+                            <p class="amount">$122</p>
+                            <p class="currency">USD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="send-money-process2"><label>Transaction Fee</label><br>
+                    <div class="send-amount">
+                        <p class="amount">$122</p>
+                        <p class="currency">USD</p>
+                    </div>
+                </div>
+
+                <br>
+                <label for="">Receiver Country</label> <br>
+                <select class="receiver-country">
+                    <option>Select Country</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Dubai">Dubai</option>
+                    <option value="Iran">Iran</option>
+                </select>
+
+                <div class="form-button">
+                    <button><a href="send-money3.html">Continue Transcation</a> <i
+                            class="bi bi-arrow-right"></i></button>
+                    <p>By clicking Continue. I am agree with <span>Terns & Policy</span></p>
+
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="footer1">
+        <div class="F-content">
+            <div class="F-content1">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwJs9NV_Vd24KLc09ndXT4T1rg6pP5JapF5fUh8hSl7qHLtfOhqd7qr1-TcbDk8hWzb2E&usqp=CAU"
+                    alt="" />
+                <p>Bangladesh</p>
+            </div>
+            <ul>
+                <li>Send Money</li>
+                <li>Receive Money</li>
+                <li>Transfer Money</li>
+            </ul>
+        </div>
+        <div class="F-content">
+            <ul>
+                <li>Tools</li>
+                <li>Track A Transfer</li>
+                <li>Find Location</li>
+            </ul>
+        </div>
+        <div class="F-content">
+            <ul>
+                <li>Quick Links</li>
+                <li>FAQs</li>
+                <li>Contact Us</li>
+                <li>About Us</li>
+            </ul>
+        </div>
+        <div class="F-content">
+            <ul>
+                <li>Tools</li>
+                <li>Online Privcy Statement</li>
+            </ul>
+        </div>
+    </section>
+    <section class="footer2">
+        <div class="left-footer2">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Police</a></li>
+            </ul>
+        </div>
+        <div class="right-footer2">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-youtube" style="color: red;"></i>
+        </div>
+    </section>
+
+
+    <script>
+        let submenu = document.getElementById("menu-list")
+        function toggleMenu() {
+
+            submenu.classList.toggle("open-menu");
+        }
+
+    </script>
+</body>
+
+</html>
